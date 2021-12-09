@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  backend:
+    image: backend
+    build:
+      context: .
+      dockerfile: PhysicsWars.WebApi/Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - db
+    restart: on-failure
+
+  db:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      - "SA_PASSWORD=Your_password123"
+      - "ACCEPT_EULA=Y"
+      - "MSSQL_PID=Enterprise"
+    volumes:
+      - "~/PhysicsWars/mssql/data:/var/opt/mssql/data"
+    ports:
+      - "5002:1433"
