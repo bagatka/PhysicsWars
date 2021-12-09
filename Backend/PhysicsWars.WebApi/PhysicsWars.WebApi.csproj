@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
-        <ImplicitUsings>enable</ImplicitUsings>
+        <ImplicitUsings>false</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
@@ -16,11 +16,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\PhysicsWars.Infrastructure\PhysicsWars.Infrastructure.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Features\HealthChecks" />
-      <Folder Include="Features\HealthChecks\Commands" />
     </ItemGroup>
 
 </Project>

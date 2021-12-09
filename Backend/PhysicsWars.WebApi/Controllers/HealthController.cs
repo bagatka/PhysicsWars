@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using PhysicsWars.Application.Features.Technical.HealthChecks;
 
 namespace PhysicsWars.WebApi.Controllers;

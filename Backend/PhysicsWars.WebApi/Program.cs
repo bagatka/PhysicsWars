@@ -1,5 +1,8 @@
 using System.Reflection;
 using MediatR;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using PhysicsWars.Application;
 using PhysicsWars.Infrastructure;
 
