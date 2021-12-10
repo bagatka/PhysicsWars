@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace PhysicsWars.Application.Common.DataAccess;
+﻿namespace PhysicsWars.Application.Common.DataAccess;
 
 public interface IPhysicsWarsDatabase
 {

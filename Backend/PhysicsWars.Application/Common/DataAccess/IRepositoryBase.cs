@@ -1,6 +1,3 @@
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace PhysicsWars.Application.Common.DataAccess;
 
 public interface IRepositoryBase<TEntity> where TEntity : class

@@ -21,8 +21,6 @@ public static class InfrastructureDependencyInjection
             options => options.UseSqlServer(configuration.GetConnectionString("PhysicsWars"))
         );
 
-        services.AddScoped<IPhysicsWarsDatabase, PhysicsWarsDatabase>(
-            options => ActivatorUtilities.CreateInstance<PhysicsWarsDatabase>(options)
-        );
+        services.AddScoped<IPhysicsWarsDatabase, PhysicsWarsDatabase>();
     }
 }
