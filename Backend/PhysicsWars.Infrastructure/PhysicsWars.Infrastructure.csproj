@@ -7,11 +7,31 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Mapster" Version="7.2.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+      <PackageReference Include="OneOf" Version="3.0.203" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\PhysicsWars.Application\PhysicsWars.Application.csproj" />
+      <ProjectReference Include="..\PhysicsWars.Domain\PhysicsWars.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Localization\Services\Auth\RegistrationService.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>RegistrationService.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Localization\Services\Auth\RegistrationService.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>RegistrationService.resx</DependentUpon>
+      </Compile>
     </ItemGroup>
 
 </Project>

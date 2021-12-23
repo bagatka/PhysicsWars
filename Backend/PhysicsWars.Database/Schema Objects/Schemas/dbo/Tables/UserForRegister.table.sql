@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[UserForRegister]
+(
+    [Id] UNIQUEIDENTIFIER NOT NULL,
+    [Email] NVARCHAR(320) NOT NULL,
+    [Username] NVARCHAR(256) NOT NULL,
+    [Password] VARBINARY(512) NOT NULL,
+    [Salt] VARBINARY(512) NOT NULL,
+    [CreatedAt] DATETIMEOFFSET NOT NULL,
+    CONSTRAINT [PK_UserForRegister] PRIMARY KEY CLUSTERED ([Id] ASC)
+);

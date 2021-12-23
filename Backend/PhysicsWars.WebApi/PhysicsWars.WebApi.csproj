@@ -18,4 +18,19 @@
       <ProjectReference Include="..\PhysicsWars.Infrastructure\PhysicsWars.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <EmbeddedResource Update="Localization\Controllers\AuthController.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AuthController.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Localization\Controllers\AuthController.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AuthController.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
 </Project>
